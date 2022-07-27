@@ -2,14 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
     <title>Neal.com</title>
-    <img src="nnng.jpeg"width="400" height="400">
+    
+    
+ 
 </head>
 <body>
-<p1>shop worldwide easily.</p1>
+
+<img src="static/nnng.png"width="50" height="50">
+<a href="/cart"><img src="static/download.jpg"width="50" height="50" style="float: right;"></a>
+<style>
+    #image {
+  height: 400px;
+  width: 500px;
+  background-color: powderblue;
+    }
+</style>
+
+
+
+
 <p1 style="color:darkgreen;">shop worldwide easily.</p1>
-<p1 style="font-size:15px">shop worldwide easily.</p1>
-<img src="Nike-x-Travis.jpeg"width="400" height="400">
+
+
+<div class = "row">
+  <div class="column">
+     <a href="/product"><img id="image" src="static/Nike-x-Travis.jpg" alt="Travis AF1"></a>
+    <h1>Travis AF1</h1>
+  </div>
+  <div class="column">
+     <a href="/product"><img id="image" src="static/ow j4.jpg" alt="off white Jordan 4's">
+     </a>
+     <h2>off white Jordan 4's </h2>
+  </div>
+  <div class="column">
+    <a href="/product"> <img id="image" src="static/dior.jpeg" alt="Dior Jordan 1's"></a>
+    <h1>Dior Jordan 1's</h1>
+  </div>
+</div>
 </body>
 </html>
